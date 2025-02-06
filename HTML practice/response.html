@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        [class*="col-"] {
+            float: left;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        ul{
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        h3{
+            padding: 5px 0;
+        }
+
+        .col-3{
+            width: 25%;
+            background-color:chartreuse;
+        }
+
+        @media (max-width: 768px){
+            .col-3 {
+                width: 33.33%;
+                background-color: yellow;
+            }
+        }
+
+        @media (max-width: 576px){
+            .col-3 {
+                width: 50%;
+                background-color: lightblue;
+            }
+        }
+
+        /* Laptop */
+        @media (max-width: 1440px) {
+            h3{
+                font-size: 26px;
+            }
+            li{
+                font-size: 24px;
+            }
+        }
+
+        @media (max-width: 1024px){
+            h3{
+                font-size: 22px;
+            }
+            li{
+                font-size: 20px;
+            }
+        }
+       
+
+        /* Tablets */
+        @media (max-width: 768px){
+            h3{
+                font-size: 18px;
+            }
+            li{
+                font-size: 16px;
+            }
+        }
+       
+        @media (max-width: 525px){
+            h3{
+                font-size: 16px;
+            }
+            li{
+                font-size: 14px;
+            }
+        }
+
+        /* Mobile */
+        @media (max-width: 425px) {
+            h3 {
+                font-size: 14px;
+            }
+            li {
+                font-size: 12px;
+            }
+        }
+
+        @media (max-width: 375px) {
+            h3 {
+                font-size: 12px;
+            }
+            li {
+                font-size: 10px;
+            }
+        }
+
+        @media (max-width: 320px) {
+            h3 {
+                font-size: 10px;
+            }
+            li {
+                font-size: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div class="col-3">
+            <ul>
+                <h3>Top Tutorial</h3>  
+                <li><a href="link">HTML Examples</a></li>
+                <li><a href="link">CSS Tutorial</a></li>
+                <li><a href="link">JavaScript Tutorial</a></li>
+                <li><a href="link">W3.CSS Tutorial</a></li>
+                <li><a href="link">Bootstrap Tutorial</a></li>
+                <li><a href="link">Java Tutorial</a></li>
+                <li><a href="link">C++ Tutorial</a></li>
+            </ul>
+        </div>
+
+        <div class="col-3">
+            <ul>
+                <h3>Top References</h3>  
+                <li><a href="link">HTML Reference</a></li>
+                <li><a href="link">CSS Reference</a></li>
+                <li><a href="link">Python Reference</a></li>
+                <li><a href="link">JavaScript Reference</a></li>
+                <li><a href="link">Bootstrap Reference</a></li>
+                <li><a href="link">Java Reference</a></li>
+                <li><a href="link">C++ Reference</a></li>
+            </ul>
+        </div>
+
+        <div class="col-3">
+            <ul>
+                <h3>Top Examples</h3>  
+                <li><a href="link">HTML Examples</a></li>
+                <li><a href="link">CSS Examples</a></li>
+                <li><a href="link">Python Examples</a></li>
+                <li><a href="link">JavaScript Examples</a></li>
+                <li><a href="link">Bootstrap Examples</a></li>
+                <li><a href="link">Java Examples</a></li>
+                <li><a href="link">C++ Examples</a></li>
+            </ul>
+        </div>
+
+        <div class="col-3">
+            <ul>
+                <h3>Get Certified</h3>  
+                <li><a href="link">HTML Certified</a></li>
+                <li><a href="link">CSS Certified</a></li>
+                <li><a href="link">Python Certified</a></li>
+                <li><a href="link">JavaScript Certified</a></li>
+                <li><a href="link">Bootstrap Certified</a></li>
+                <li><a href="link">Java Certified</a></li>
+                <li><a href="link">C++ Certified</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
