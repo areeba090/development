@@ -1,5 +1,6 @@
-let x,y,z;
+{let x,y,z;
 x=1;
 y=9;
 z=x+y;
-console.log("x+y=",z);
+console.log("x+y=",z);}
+let x;
